@@ -1,2 +1,2 @@
 # 2404-api-node-express
-Projeto utilizado no curso da Alura
+projeto de criação em andamento, API express mongo
