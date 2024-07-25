@@ -6,13 +6,11 @@ class ErroBase extends Error {
     }
 
     enviarResposta() {
-        resizeBy.status(this.status).send({
+        res.status(this.status).send({
             mensagem: this.message,
             status: this.status
         })
     }
-
-
 }
 
 
