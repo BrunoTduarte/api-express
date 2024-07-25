@@ -3,9 +3,9 @@ class ErroBase extends Error {
         super()
         this.message = mensagem;
         this.status = status;
-    }
+    };
 
-    enviarResposta() {
+    enviarResposta(res) {
         res.status(this.status).send({
             mensagem: this.message,
             status: this.status
