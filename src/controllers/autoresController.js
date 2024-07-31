@@ -93,7 +93,7 @@ class AutorController {
         }
       } catch (erro) {
 <<<<<<< HEAD
-        next(erro);
+        next(500);
 =======
         next(500);
 >>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
