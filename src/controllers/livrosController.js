@@ -11,7 +11,7 @@ class LivroController {
 
       res.status(200).json(livrosResultado);
     } catch (erro) {
-      next(500);
+      next(erro);
     }
   }
 
@@ -30,7 +30,7 @@ class LivroController {
         }
 
     } catch (erro) {
-      next(500);
+      next(erro);
     }
   }
 
@@ -42,7 +42,7 @@ class LivroController {
 
       res.status(201).send(livroResultado.toJSON());
     } catch (erro) {
-      next(500);
+      next(erro);
     }
   }
 
@@ -59,7 +59,7 @@ class LivroController {
       }
 
     } catch (erro) {
-      next(500);
+      next(erro);
     }
   }
 
@@ -76,7 +76,7 @@ class LivroController {
       }
 
     } catch (erro) {
-     next(500);
+     next(erro);
     }
   }
 
@@ -88,7 +88,7 @@ class LivroController {
 
       res.status(200).send(livrosResultado);
     } catch (erro) {
-    next(500);
+    next(erro);
     }
   }
 

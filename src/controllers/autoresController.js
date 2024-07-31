@@ -11,7 +11,7 @@ class AutorController {
       res.status(200).json(autoresResultado);
       
   } catch (erro) {
-     next(500);
+     next(erro);
   }
   }
 
@@ -28,7 +28,7 @@ class AutorController {
           next(new NaoEncontrado("Id do Autor não localizado."));
         }
       } catch (erro) {
-        next(500);
+        next(erro);
       }
     };
   
@@ -41,7 +41,7 @@ class AutorController {
   
         res.status(201).send(autorResultado.toJSON());
       } catch (erro) {
-        next(500);
+        next(erro);
       }
     }
   
@@ -57,7 +57,7 @@ class AutorController {
           next(new NaoEncontrado("ID para atualizar autor não encontrado"));
         }
       } catch (erro) {
-        next(500);
+        next(erro);
       }
     }
   
@@ -72,7 +72,7 @@ class AutorController {
           next(new NaoEncontrado("ID para excluir autor não encontrado"))
         }
       } catch (erro) {
-        next(500);
+        next(erro);
       }
     }
   
