@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 import autores from "../models/Autor.js";
-import NaoEncontrado from "../erros/NaoEncontrado.js";
+<<<<<<< HEAD
+import NaoEncontrado from "../Erros/NaoEncontrado.js";
+=======
+import NaoEncontrado from "../Erros/NaoEncontrado.js";
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
 
 class AutorController {
 
@@ -11,7 +15,11 @@ class AutorController {
       res.status(200).json(autoresResultado);
       
   } catch (erro) {
-     next(erro);
+<<<<<<< HEAD
+     next(500);
+=======
+     next(500);
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
   }
   }
 
@@ -28,7 +36,11 @@ class AutorController {
           next(new NaoEncontrado("Id do Autor não localizado."));
         }
       } catch (erro) {
-        next(erro);
+<<<<<<< HEAD
+        next(500);
+=======
+        next(500);
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
       }
     };
   
@@ -41,7 +53,11 @@ class AutorController {
   
         res.status(201).send(autorResultado.toJSON());
       } catch (erro) {
-        next(erro);
+<<<<<<< HEAD
+        next(500);
+=======
+        next(500);
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
       }
     }
   
@@ -57,7 +73,11 @@ class AutorController {
           next(new NaoEncontrado("ID para atualizar autor não encontrado"));
         }
       } catch (erro) {
-        next(erro);
+<<<<<<< HEAD
+        next(500);
+=======
+        next(500);
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
       }
     }
   
@@ -72,7 +92,11 @@ class AutorController {
           next(new NaoEncontrado("ID para excluir autor não encontrado"))
         }
       } catch (erro) {
+<<<<<<< HEAD
         next(erro);
+=======
+        next(500);
+>>>>>>> f29cfe3540516733d0c5383702a1e19f93e1a47c
       }
     }
   
