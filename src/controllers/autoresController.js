@@ -75,8 +75,6 @@ class AutorController {
         next(erro);
       }
     }
-  
-
 }
 
 export default AutorController

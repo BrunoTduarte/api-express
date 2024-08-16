@@ -9,5 +9,6 @@ router
   .post("/autores", AutorController.cadastrarAutor)
   .put("/autores/:id", AutorController.atualizarAutor)
   .delete("/autores/:id", AutorController.excluirAutor)
+  
 
 export default router;   
