@@ -1,4 +1,4 @@
-# API Express com Node.js(em andamento)
+# API Express com Node.js
 
 ## Descrição
 Este projeto é uma API REST construída com Node.js, Express e MongoDB. Ele permite criar, atualizar, recuperar e excluir dados relacionados a uma livraria. A API gerencia informações sobre livros, autores e editoras.
@@ -10,6 +10,7 @@ Buscar um livro pelo ID
 Adicionar um novo livro
 Atualizar informações de um livro existente
 Excluir um livro
+paginação
 
 ### Autores:
 Listar todos os autores
