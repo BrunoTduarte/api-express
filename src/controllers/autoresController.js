@@ -3,24 +3,13 @@ import RequisicaoIncorreta from "../erros/RequisicaoIncorreta.js";
 import { autores } from "../models/index.js";
 
 class AutorController {
-  static listarAutores = async (req, res) => {
+  static listarAutores = async (req, res, next) => {
     try {
-      const { limite = 5, pagina = 1} = req.query
+      const autoresResultado = autores.find()
 
-      limite = parseInt(limite);
-      pagina = parseInt(pagina);
-      
-      if (limite > 0 && pagina > 0 ){  
-      const livrosResultados = await livros.find()
-        .skip((pagina - 1 ) * limite)
-        .limit(limite)
-        .populate("autor")
-        .exec();
+      req.resultado = autoresResultado;
 
-      } else {
-        next(new RequisicaoIncorreta())
-      }
-
+      next();
     } catch (erro) {
       next(erro);
     }
